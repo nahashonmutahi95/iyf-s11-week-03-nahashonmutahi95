@@ -1,7 +1,8 @@
-# Creates a new project with standard structure
+
 param(
     [Parameter(Position = 0, Mandatory = $true)]
-    [string]$ProjectName
+    [string]$mutahi tech
+    
 )
 
 if (-not $ProjectName) {
