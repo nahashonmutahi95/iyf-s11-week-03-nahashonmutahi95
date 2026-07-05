@@ -60,7 +60,7 @@ git remote -v
 ### Partner 1: Create Feature Branch & Profile Card
 
 ```bash
-# Partner 1
+# musembijoel
 git checkout -b feature/partner1-profile
 
 # Create/edit index.html with your profile card
@@ -99,7 +99,7 @@ git push -u origin feature/partner1-profile
 ### Partner 2: Create Feature Branch & Profile Card
 
 ```bash
-# Partner 2
+# francis waceke
 # Make sure you're on main first
 git checkout main
 git pull origin main
