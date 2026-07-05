@@ -1,25 +1,23 @@
-#!/bin/bash
-# Git Branch Workflow Exercise 2
-# Complete workflow: create, modify, commit, merge, and delete branches
+
 
 echo "=== Git Branch Workflow Exercise 2 ==="
 echo ""
 
-# Step 1: Create branch feature/about-page
+
 echo "Step 1: Create branch 'feature/about-page'"
 echo "Command: git branch feature/about-page"
 git branch feature/about-page
 echo "✓ Branch created"
 echo ""
 
-# Step 2: Switch to the branch
+
 echo "Step 2: Switch to the feature/about-page branch"
 echo "Command: git checkout feature/about-page"
 git checkout feature/about-page
 echo "✓ Switched to feature/about-page"
 echo ""
 
-# Step 3: Make changes to about.html
+
 echo "Step 3: Make changes to about.html"
 echo "Creating/modifying about.html..."
 cat > about.html << 'EOF'
@@ -68,7 +66,7 @@ EOF
 echo "✓ about.html created with content"
 echo ""
 
-# Step 4: Check status and commit changes
+
 echo "Step 4: Check git status"
 echo "Command: git status"
 git status
@@ -82,28 +80,28 @@ git commit -m "feat: add about page with navigation"
 echo "✓ Changes committed"
 echo ""
 
-# Step 5: Switch back to main
+
 echo "Step 5: Switch back to main branch"
 echo "Command: git checkout main"
 git checkout main
 echo "✓ Switched to main"
 echo ""
 
-# Step 6: Merge the feature branch
+
 echo "Step 6: Merge feature/about-page into main"
 echo "Command: git merge feature/about-page"
 git merge feature/about-page
 echo "✓ Branch merged successfully"
 echo ""
 
-# Step 7: Delete the merged branch
+
 echo "Step 7: Delete the merged branch"
 echo "Command: git branch -d feature/about-page"
 git branch -d feature/about-page
 echo "✓ feature/about-page branch deleted"
 echo ""
 
-# Final: Show branch list
+
 echo "Final: Current branches"
 echo "Command: git branch"
 git branch
